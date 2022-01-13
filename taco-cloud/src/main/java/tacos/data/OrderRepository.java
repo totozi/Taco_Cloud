@@ -11,9 +11,9 @@ import tacos.Order;
 public interface OrderRepository extends CrudRepository<Order, Long>{
 	
 //	Order save(Order order);
-	List<Order> findByDeliverZip(String deliverZip);
-	List<Order> readOrdersByDeliveryZipandPlacedAtBetween(String deliverZip,Date startDate, Date endDate);
+	List<Order> findBydeliveryZip(String deliveryZip);
+//	List<Order> readOrdersByDeliveryZipandPlacedAtBetween(String deliveryZip,Date startDate, Date endDate);
 	
-	@Query("Order o where o.deliverCity='Seattle'")
-	List<Order> readOrdersDeliveredInSeattle();
+//	@Query("Order o where o.deliveryCity='Seattle'")
+//	List<Order> readOrdersDeliveredInSeattle();
 }
